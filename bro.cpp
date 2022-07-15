@@ -45,7 +45,7 @@ long long kruskal(pair<long long, pair<int, int>> p[])
 int main()
 {
     int x, y;
-    long long weight, cost, minimumCost;
+    long long we, cost, minimumCost;
     init();
     cout << "Enter Nodes and edges";
     cin >> nodes >> edges;
@@ -53,8 +53,8 @@ int main()
     {
 
         cout << "Enter the value of X. Y and edges";
-        cin >> x >> y >> weight;
-        p[i] = make_pair(weight, make_pair(x, y));
+        cin >> x >> y >> we;
+        p[i] = make_pair(we, make_pair(x, y));
     }
     sort(p, p + edges);
     minimumCost = kruskal(p);
